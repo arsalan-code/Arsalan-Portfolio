@@ -673,13 +673,14 @@ footer {
 
  
 
-@media (min-width: 400px) and (max-width:600px){
+@media (min-width: 370px) and (max-width:600px){
 
 #home .image-slid
 {
- margin-left: 20px;
- margin-top: 20px;
+ margin-left: 0px !important;
+ margin-top: 20px !important;
 }
+ 
 
 .home-content
 {
@@ -744,7 +745,4 @@ footer {
 
 }
 
-img[title="React"] {
-   color: red;
-   background-color: red;
-  }
+ 
