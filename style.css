@@ -671,7 +671,45 @@ footer {
 
 /* <.......Responsive.........> */
 
+.my-skills .skill
+{
+    border-radius: 5px;
+    border: 1px solid #0ef;
+    padding:0.3rem 2rem;
+    margin: 0rem 1.1rem;
+}
+.skill:hover
+{
+    transform: scale(1.1);
+}
+
+.my-skills 
+{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+
  
+  
+.track
+{
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+}
+.track:hover
+{
+    animation-play-state: paused;
+}
+  
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 
 @media (min-width: 370px) and (max-width:600px){
 
@@ -743,6 +781,21 @@ footer {
     left: 10px;
    }
 
+}
+
+#skills span
+{
+    color: #0ef;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
+}
+#skills h2
+{
+    
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 2.2rem;
 }
 
  
